@@ -1,10 +1,5 @@
 const WORD = /[\p{L}\p{N}]/u;
 
-// Whether the quotes inside a candidate wrapper pair up on their own. Each quote
-// is read by its flanks: a word on the right only opens a span, a word on the
-// left only closes one. A closer with nothing open means the outer quotes were
-// two separate spans (`"Admin" in der Liste "Role"`), not one wrapper. A quote
-// with words on both sides, as in unspaced CJK, cannot be read, so it stays put.
 function quotesPairUp(inner: string): boolean {
   let open = 0;
   for (let i = 0; i < inner.length; i++) {
