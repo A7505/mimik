@@ -39,7 +39,7 @@ library:
   noStarredTitle: No starred guides
   noStarredSub: Star a guide to find it quickly
   trashEmptyTitle: Trash is empty
-  trashEmptySub: "Deleted guides show up here"
+  trashEmptySub: Squeaky clean!
   noMatchingGuides: No matching guides
   moveToTrash: Move to trash
   deletePermanently: Delete permanently
@@ -66,7 +66,7 @@ guideme:
   guideNotFound: Guide not found
 
 guidemeCompletion:
-  title: "Guide complete"
+  title: "All done, champ!"
   stepsCompleted: "$1 step completed."
   stepsCompletedPlural: "All $1 steps completed."
   allDone: "All done"
@@ -176,7 +176,7 @@ fullview:
   searchPlaceholder: Search guides…
   guideMe: "Guide Me"
   untitledGuide: "Untitled guide"
-  writingTitle: "Writing a title…"
+  writingTitle: Writing a title from your captured steps...
   writingDescription: "Writing a description\u2026"
   guideNotFound: "Guide not found"
   stepCount: "$1 step"
@@ -203,7 +203,7 @@ keyboard:
 
 confirmDelete:
   title: "Delete guide?"
-  message: "This can't be undone."
+  message: This will permanently delete this guide. This cannot be undone.
   confirm: Delete permanently
 
 editor:
@@ -463,12 +463,12 @@ exportMenu:
 
 onboarding:
   welcomeBadge: Welcome
-  welcomeTitle: "Mimik is installed"
-  welcomeMessage: "Set a few options, then record your first guide. No account needed. Guides stay in your browser."
+  welcomeTitle: "You've successfully installed Mimik!"
+  welcomeMessage: "With just a few steps, you'll be ready to auto-capture browser workflows and generate step-by-step guides. No account needed \u2014 everything stays in your browser."
   getStarted: Get started
   stepOf: "Step $1 of $2"
   aiTitle: "AI descriptions"
-  aiMessage: "Optional: add your own API key and AI writes each step's description."
+  aiMessage: Connect your own API key to get AI-generated step descriptions. This is optional and can be changed later in settings.
   aiGenerated: AI-generated
   aiGeneratedDescription: AI-generated description
   voiceTitle: Talk, then act

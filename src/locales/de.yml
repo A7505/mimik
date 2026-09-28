@@ -39,7 +39,7 @@ library:
   noStarredTitle: Keine Favoriten
   noStarredSub: Favorisiere eine Anleitung, um sie schnell wiederzufinden
   trashEmptyTitle: Papierkorb ist leer
-  trashEmptySub: "Gelöschte Anleitungen erscheinen hier"
+  trashEmptySub: Blitzsauber!
   noMatchingGuides: Keine passenden Anleitungen
   moveToTrash: In den Papierkorb verschieben
   deletePermanently: Endgültig löschen
@@ -66,7 +66,7 @@ guideme:
   guideNotFound: Anleitung nicht gefunden
 
 guidemeCompletion:
-  title: "Anleitung abgeschlossen"
+  title: "Alles erledigt, super!"
   stepsCompleted: "$1 Schritt abgeschlossen."
   stepsCompletedPlural: "Alle $1 Schritte abgeschlossen."
   allDone: Fertig
@@ -176,7 +176,7 @@ fullview:
   searchPlaceholder: Anleitungen durchsuchen…
   guideMe: "Anleiten"
   untitledGuide: Unbenannte Anleitung
-  writingTitle: "Titel wird geschrieben…"
+  writingTitle: Titel wird aus deinen aufgenommenen Schritten erstellt...
   guideNotFound: "Anleitung nicht gefunden."
   stepCount: "$1 Schritt"
   stepCountPlural: "$1 Schritte"
@@ -203,7 +203,7 @@ keyboard:
 
 confirmDelete:
   title: "Anleitung löschen?"
-  message: "Das lässt sich nicht rückgängig machen."
+  message: Diese Anleitung wird endgültig gelöscht. Das kann nicht rückgängig gemacht werden.
   confirm: Endgültig löschen
 
 editor:
@@ -394,12 +394,12 @@ exportMenu:
 
 onboarding:
   welcomeBadge: Willkommen
-  welcomeTitle: "Mimik ist installiert"
-  welcomeMessage: "Ein paar Einstellungen, dann nimmst du deine erste Anleitung auf. Ohne Konto, alles bleibt lokal."
+  welcomeTitle: "Du hast Mimik erfolgreich installiert!"
+  welcomeMessage: "Mit nur wenigen Schritten bist du bereit, Browser-Workflows automatisch aufzunehmen und Schritt-für-Schritt-Anleitungen zu erstellen. Kein Konto nötig — alles bleibt in deinem Browser."
   getStarted: Loslegen
   stepOf: "Schritt $1 von $2"
   aiTitle: KI-Beschreibungen
-  aiMessage: "Optional: Füge deinen API-Schlüssel hinzu und die KI beschreibt jeden Schritt."
+  aiMessage: Verbinde deinen eigenen API-Schlüssel, um KI-generierte Schrittbeschreibungen zu erhalten. Das ist optional und kann später in den Einstellungen geändert werden.
   aiGenerated: KI-generiert
   aiGeneratedDescription: KI-generierte Beschreibung
   voiceTitle: Sprich, dann handle

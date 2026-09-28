@@ -39,7 +39,7 @@ library:
   noStarredTitle: 暂无收藏指南
   noStarredSub: 收藏指南后可快速找到它
   trashEmptyTitle: 回收站为空
-  trashEmptySub: "已删除的指南会显示在这里"
+  trashEmptySub: 干干净净！
   noMatchingGuides: 没有匹配的指南
   moveToTrash: 移至回收站
   deletePermanently: 永久删除
@@ -66,7 +66,7 @@ guideme:
   guideNotFound: 未找到指南
 
 guidemeCompletion:
-  title: "指南已完成"
+  title: "全部完成！"
   stepsCompleted: "已完成 $1 个步骤。"
   stepsCompletedPlural: "已完成全部 $1 个步骤。"
   allDone: 完成
@@ -176,7 +176,7 @@ fullview:
   searchPlaceholder: 搜索指南…
   guideMe: "引导我"
   untitledGuide: 未命名指南
-  writingTitle: "正在生成标题…"
+  writingTitle: 正在根据捕获的步骤生成标题...
   writingDescription: "正在生成描述…"
   guideNotFound: "未找到指南。"
   stepCount: "$1 个步骤"
@@ -203,7 +203,7 @@ keyboard:
 
 confirmDelete:
   title: "删除指南？"
-  message: "此操作无法撤销。"
+  message: 这将永久删除该指南，且无法撤销。
   confirm: 永久删除
 
 editor:
@@ -463,12 +463,12 @@ exportMenu:
 
 onboarding:
   welcomeBadge: 欢迎
-  welcomeTitle: "Mimik 已安装"
-  welcomeMessage: "完成几项设置，即可录制第一份指南。无需账号，所有内容都保留在你的浏览器中。"
+  welcomeTitle: "你已成功安装 Mimik！"
+  welcomeMessage: "只需几步即可开始自动捕获浏览器工作流并生成分步指南。无需账号，一切都保留在你的浏览器中。"
   getStarted: 开始使用
   stepOf: "第 $1 步，共 $2 步"
   aiTitle: AI 描述
-  aiMessage: "可选：添加你自己的 API 密钥，AI 会为每个步骤撰写描述。"
+  aiMessage: 连接你自己的 API 密钥，即可获得 AI 生成的步骤描述。此功能可选，也可以稍后在设置中更改。
   aiGenerated: AI 生成
   aiGeneratedDescription: AI 生成的描述
   voiceTitle: 先说，再操作

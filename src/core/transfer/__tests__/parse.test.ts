@@ -218,6 +218,11 @@ describe('parseManifest', () => {
     expect(withAnnotations([{ id: 'odd', type: 'freehand', points: [1, 2, 3], color: '#000' }])).toBeUndefined();
   });
 
+  it('titles a bundle with no title the way a new guide is titled', () => {
+    const parsed = parseManifest(manifest({ guide: { title: '   ', createdAt: 1_700_000_000_000 } }));
+    expect(parsed.guide.title).toBe('fullview.untitledGuide');
+  });
+
   it('orders steps by their recorded index', () => {
     const parsed = parseManifest(
       manifest({

@@ -39,7 +39,7 @@ library:
   noStarredTitle: Sem favoritos
   noStarredSub: "Marque um guia como favorito para encontrá-lo rapidamente"
   trashEmptyTitle: Lixeira vazia
-  trashEmptySub: "Guias excluídos aparecem aqui"
+  trashEmptySub: "Tudo limpo por aqui!"
   noMatchingGuides: Nenhum guia encontrado
   moveToTrash: "Mover para a lixeira"
   deletePermanently: "Excluir permanentemente"
@@ -66,7 +66,7 @@ guideme:
   guideNotFound: Guia não encontrado
 
 guidemeCompletion:
-  title: "Guia concluído"
+  title: "Arrasou, campeão!"
   stepsCompleted: "$1 passo concluído."
   stepsCompletedPlural: "Todos os $1 passos concluídos."
   allDone: Pronto
@@ -176,7 +176,7 @@ fullview:
   searchPlaceholder: Buscar guias…
   guideMe: "Me guie"
   untitledGuide: Guia sem título
-  writingTitle: "Escrevendo um título…"
+  writingTitle: Escrevendo um título com os passos capturados...
   writingDescription: "Escrevendo uma descri\xE7\xE3o\u2026"
   guideNotFound: "Guia não encontrado."
   stepCount: "$1 passo"
@@ -203,7 +203,7 @@ keyboard:
 
 confirmDelete:
   title: "Excluir este guia?"
-  message: "Não é possível desfazer."
+  message: Vai ser excluído de vez. Não tem como desfazer.
   confirm: "Excluir permanentemente"
 
 editor:
@@ -463,12 +463,12 @@ exportMenu:
 
 onboarding:
   welcomeBadge: "Boas-vindas"
-  welcomeTitle: "O Mimik está instalado"
-  welcomeMessage: "Defina algumas opções e grave seu primeiro guia. Sem conta. Seus guias ficam no navegador."
+  welcomeTitle: "Mimik instalado!"
+  welcomeMessage: "Em poucos passos você vai poder capturar fluxos de trabalho e gerar guias automáticos. Sem conta, sem cadastro \u2014 tudo fica no seu navegador."
   getStarted: "Começar"
   stepOf: "Passo $1 de $2"
   aiTitle: Descrições com IA
-  aiMessage: "Opcional: adicione sua chave de API e a IA escreve a descrição de cada passo."
+  aiMessage: Conecta sua chave API pra ter descrições dos passos geradas por IA. É opcional e dá pra mudar depois nos ajustes.
   aiGenerated: Gerado por IA
   aiGeneratedDescription: Descrição gerada por IA
   voiceTitle: "Fale e depois faça"

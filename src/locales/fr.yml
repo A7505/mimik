@@ -39,7 +39,7 @@ library:
   noStarredTitle: Aucun favori
   noStarredSub: "Ajoutez un guide aux favoris pour le retrouver vite"
   trashEmptyTitle: La corbeille est vide
-  trashEmptySub: "Les guides supprimés apparaissent ici"
+  trashEmptySub: "Tout est nickel !"
   noMatchingGuides: Aucun guide trouvé
   moveToTrash: "Mettre à la corbeille"
   deletePermanently: "Supprimer définitivement"
@@ -66,7 +66,7 @@ guideme:
   guideNotFound: Guide introuvable
 
 guidemeCompletion:
-  title: "Guide terminé"
+  title: "Et voilà, c'est dans la poche !"
   stepsCompleted: "$1 étape terminée."
   stepsCompletedPlural: "Les $1 étapes sont terminées."
   allDone: "Terminé"
@@ -176,7 +176,7 @@ fullview:
   searchPlaceholder: "Rechercher des guides…"
   guideMe: "Guidez-moi"
   untitledGuide: Guide sans titre
-  writingTitle: "Rédaction du titre…"
+  writingTitle: "Rédaction du titre à partir de vos étapes..."
   writingDescription: "R\xE9daction d\u2019une description\u2026"
   guideNotFound: Guide introuvable.
   stepCount: "$1 étape"
@@ -203,7 +203,7 @@ keyboard:
 
 confirmDelete:
   title: "Supprimer ce guide ?"
-  message: "Cette action est irréversible."
+  message: "Il sera supprimé définitivement. Pas de retour en arrière."
   confirm: "Supprimer définitivement"
 
 editor:
@@ -463,12 +463,12 @@ exportMenu:
 
 onboarding:
   welcomeBadge: Bienvenue
-  welcomeTitle: "Mimik est installé"
-  welcomeMessage: "Quelques réglages, puis votre premier guide. Sans compte. Vos guides restent dans le navigateur."
+  welcomeTitle: "Mimik est installé !"
+  welcomeMessage: "En quelques étapes, vous pourrez capturer vos parcours navigateur et générer des guides automatiquement. Pas de compte nécessaire — tout reste dans votre navigateur."
   getStarted: "C'est parti"
   stepOf: "Étape $1 sur $2"
   aiTitle: Descriptions IA
-  aiMessage: "Facultatif : ajoutez votre clé API et l'IA rédige la description de chaque étape."
+  aiMessage: "Connectez votre clé API pour obtenir des descriptions générées par IA. C'est facultatif et modifiable dans les paramètres."
   aiGenerated: "Généré par IA"
   aiGeneratedDescription: "Description générée par IA"
   voiceTitle: "Parlez, puis agissez"
