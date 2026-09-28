@@ -32,11 +32,12 @@ Click record, do the thing, get a polished guide with annotated screenshots. Nar
 - [📺 Demo](#-demo)
 - [👋 Getting Started](#-getting-started)
 - [✨ Features](#-features)
-  - [🔒 Smart Blur](#-smart-blur)
+  - [🔒 Smart blur](#-smart-blur)
   - [🧠 AI descriptions (optional)](#-ai-descriptions-optional)
   - [▶️ Guide Me replay](#️-guide-me-replay)
   - [🎙️ Voice narration (optional)](#️-voice-narration-optional)
   - [✏️ Guide editor](#️-guide-editor)
+  - [🔊 Video voice-over (optional)](#-video-voice-over-optional)
   - [📤 Multi-format export](#-multi-format-export)
   - [📦 Share a guide](#-share-a-guide)
 - [🔐 Privacy & storage](#-privacy--storage)
@@ -64,7 +65,7 @@ Every meaningful action becomes a step: clicks on buttons and links, form inputs
 
 Each step gets a screenshot with the clicked element highlighted and zoomed in. No manual cropping, no annotation tools to learn.
 
-Need the recording to look away for a moment? **Pause** stops capture without ending the recording, and **Resume** picks up where you left off. Entering Smart Blur pauses it the same way.
+Need the recording to look away for a moment? **Pause** stops capture without ending the recording, and **Resume** picks up where you left off. Entering Smart blur pauses it the same way.
 
 | Browser | Version | Install |
 | ------- | ------- | ------- |
@@ -90,18 +91,18 @@ Available in English, Spanish, Brazilian Portuguese, French, German, and Simplif
 
 ## ✨ Features
 
-### 🔒 Smart Blur
+### 🔒 Smart blur
 
-Smart Blur is a mode you enter while recording, not an always-on filter. Click **Blur** and capture pauses, Mimik detects and masks sensitive data on the page — emails, phone numbers, SSNs, credit cards, IP addresses, MAC addresses — and screenshots of that page keep it hidden once you click **Done**. Toggle each category independently.
+Smart blur is a mode you enter while recording, not an always-on filter. Click **Smart blur** and capture pauses, Mimik detects and masks sensitive data on the page — emails, phone numbers, SSNs, credit cards, IP addresses, MAC addresses — and screenshots of that page keep it hidden once you click **Done**. Toggle each category independently.
 
 Need to blur something custom? The manual blur picker lets you select any DOM element and mask it across every screenshot where it appears.
 
 <details>
-<summary><strong>What Smart Blur does not cover</strong></summary>
+<summary><strong>What Smart blur does not cover</strong></summary>
 
 <br/>
 
-Smart Blur works by scanning text nodes and input values in the page's top frame. That leaves real gaps, all structural. If you rely on this for GDPR or similar, check your screenshots rather than assuming a clean one is a safe one:
+Smart blur works by scanning text nodes and input values in the page's top frame. That leaves real gaps, all structural. If you rely on this for GDPR or similar, check your screenshots rather than assuming a clean one is a safe one:
 
 | Not covered | Why |
 |-------------|-----|
@@ -121,7 +122,7 @@ Blur applies from the moment you enter the mode onward. Screenshots already capt
 
 </details>
 
-<img src="https://github.com/user-attachments/assets/968d2518-c561-4d68-92a6-3d5f569fe38a" alt="Smart Blur" width="800" />
+<img src="https://github.com/user-attachments/assets/968d2518-c561-4d68-92a6-3d5f569fe38a" alt="Smart blur" width="800" />
 
 <div align="right">
 
@@ -161,6 +162,12 @@ Talk through the workflow out loud while you record and Mimik turns what you sai
 descriptions. Audio is transcribed with your own key (OpenAI or Groq) and matched to the steps it
 belongs to, so you narrate once instead of writing every step by hand.
 
+The full transcript is kept, not just the parts that made it into a step. Open **Transcript** on a
+guide to see everything you said, including the lines nothing was matched to, and add any of them to
+a step. Editing a step never destroys the spoken original either — the step editor can always put
+back what you actually said. The transcript stays on your device, is never part of an exported guide, and is
+deleted with the guide.
+
 <img src="https://github.com/user-attachments/assets/061fddc7-da65-4641-8b39-d30b80c36531" alt="Voice narration" width="800" />
 
 <div align="right">
@@ -183,11 +190,21 @@ through version history.
 
 </div>
 
+### 🔊 Video voice-over (optional)
+
+Turn it on in the export panel and every step of a video export is read aloud, using your own OpenAI
+or ElevenLabs key. If you already set an OpenAI key for AI descriptions, Mimik reuses it — there is
+nothing else to sign up for. Narrated steps hold on screen until the voice finishes, so nothing gets
+cut off, and clips are cached locally so re-exporting the same guide costs nothing.
+
+Off by default: holding a key never turns narration on, you do.
+
 ### 📤 Multi-format export
 
 Share guides in whatever format fits your workflow:
 
-- **Video**: narrated walkthrough, mp4/H.264, with the cursor moving to each target
+- **Video**: narrated walkthrough, mp4/H.264, with the cursor moving to each target — optionally with an
+  OpenAI or ElevenLabs voice-over reading every step aloud, which also makes the export usable under Section 508
 - **GIF**: short looping clip for a chat thread or an issue comment
 - **PDF**: print-ready, A4 portrait with auto page breaks
 - **DOCX**: open and keep editing in Word
@@ -240,9 +257,9 @@ library. You'll see what the sender removed before anything is added.
 
 Guides, steps, and screenshots live on your device. There's no backend, no account, no telemetry. Your API keys (if you bring one) never leave your browser — they're stored locally and used to call the provider you chose directly.
 
-If you are masking personal data before sharing a guide, read [what Smart Blur does not cover](#-smart-blur) first — it cannot reach iframes, shadow DOM, or text drawn into images.
+If you are masking personal data before sharing a guide, read [what Smart blur does not cover](#-smart-blur) first — it cannot reach iframes, shadow DOM, or text drawn into images.
 
-Two things do leave the browser, both documented in the [privacy policy](https://mimik.westpoint.io/privacy/): site icons are fetched from Google's favicon service, which sends that site's domain, and the optional AI and voice features send text or audio to the provider you configured.
+Two things do leave the browser, both documented in the [privacy policy](https://mimik.westpoint.io/privacy/): site icons are fetched from Google's favicon service, which sends that site's domain, and the optional AI, voice narration and video voice-over features send text or audio to the provider you configured — voice-over sends each step's text at export time, and only when you turn it on.
 
 <div align="right">
 
