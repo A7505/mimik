@@ -22,6 +22,24 @@ describe('unwrapQuotes', () => {
     expect(unwrapQuotes('"Admin" in der Liste "Role"')).toBe('"Admin" in der Liste "Role"');
   });
 
+  it('unwraps a whole description that also quotes a value', () => {
+    expect(unwrapQuotes('"Select "Admin" from the Role dropdown"')).toBe('Select "Admin" from the Role dropdown');
+    expect(unwrapQuotes('"在 Role 下拉菜单中选择 "Admin" 选项"')).toBe('在 Role 下拉菜单中选择 "Admin" 选项');
+  });
+
+  it('unwraps a whole description whose quoted value sits at either end', () => {
+    expect(unwrapQuotes('""abc" in das Feld Email eingeben"')).toBe('"abc" in das Feld Email eingeben');
+    expect(unwrapQuotes('"Type "abc""')).toBe('Type "abc"');
+  });
+
+  it('unwraps a whole description quoting a value before punctuation', () => {
+    expect(unwrapQuotes('"Type "abc", then press Enter"')).toBe('Type "abc", then press Enter');
+  });
+
+  it('leaves a quote it cannot read as opening or closing', () => {
+    expect(unwrapQuotes('"在Role下拉菜单中选择"Admin"选项"')).toBe('"在Role下拉菜单中选择"Admin"选项"');
+  });
+
   it('leaves an unquoted sentence alone', () => {
     expect(unwrapQuotes('Type "abc" in Email')).toBe('Type "abc" in Email');
   });
