@@ -521,6 +521,7 @@ steps:
   typeSecret: "输入密码"
   typeValueInto: '在 $2 中输入 "$1"'
   clearField: "清空 $1"
+  textField: "文本框"
   copyFrom: "从 $1 复制"
   pasteInto: "粘贴到 $1"
   cutFrom: "从 $1 剪切"
