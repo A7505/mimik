@@ -521,6 +521,7 @@ steps:
   typeSecret: "Saisir le mot de passe"
   typeValueInto: 'Saisir "$1" dans $2'
   clearField: "Effacer $1"
+  textField: "champ de texte"
   copyFrom: "Copier depuis $1"
   pasteInto: "Coller dans $1"
   cutFrom: "Couper depuis $1"
