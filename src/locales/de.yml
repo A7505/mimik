@@ -381,6 +381,10 @@ videoPlayer:
   mute: "Stummschalten"
   unmute: "Ton einschalten"
   spoken: "Vertonter Schritt"
+  play: "Abspielen"
+  pause: "Pause"
+  fullscreen: "Vollbild"
+  exitFullscreen: "Vollbild beenden"
 
 exportMenu:
   docx: "DOCX"

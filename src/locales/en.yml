@@ -450,6 +450,10 @@ videoPlayer:
   mute: "Mute"
   unmute: "Unmute"
   spoken: "Narrated step"
+  play: "Play"
+  pause: "Pause"
+  fullscreen: "Fullscreen"
+  exitFullscreen: "Exit fullscreen"
 
 exportMenu:
   docx: DOCX

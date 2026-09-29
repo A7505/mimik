@@ -450,6 +450,10 @@ videoPlayer:
   mute: "Silenciar"
   unmute: "Activar sonido"
   spoken: "Paso narrado"
+  play: "Reproducir"
+  pause: "Pausar"
+  fullscreen: "Pantalla completa"
+  exitFullscreen: "Salir de pantalla completa"
 
 exportMenu:
   docx: DOCX
