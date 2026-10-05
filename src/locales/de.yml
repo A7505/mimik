@@ -381,6 +381,10 @@ videoPlayer:
   mute: "Stummschalten"
   unmute: "Ton einschalten"
   spoken: "Vertonter Schritt"
+  play: "Abspielen"
+  pause: "Pause"
+  fullscreen: "Vollbild"
+  exitFullscreen: "Vollbild beenden"
 
 exportMenu:
   docx: "DOCX"
@@ -452,6 +456,7 @@ steps:
   typeSecret: "Passwort eingeben"
   typeValueInto: '"$1" in $2 eingeben'
   clearField: "$1 leeren"
+  textField: "Textfeld"
   copyFrom: "Aus $1 kopieren"
   pasteInto: "In $1 einfügen"
   cutFrom: "Aus $1 ausschneiden"

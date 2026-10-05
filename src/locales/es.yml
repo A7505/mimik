@@ -450,6 +450,10 @@ videoPlayer:
   mute: "Silenciar"
   unmute: "Activar sonido"
   spoken: "Paso narrado"
+  play: "Reproducir"
+  pause: "Pausar"
+  fullscreen: "Pantalla completa"
+  exitFullscreen: "Salir de pantalla completa"
 
 exportMenu:
   docx: DOCX
@@ -521,6 +525,7 @@ steps:
   typeSecret: "Escribir contraseña"
   typeValueInto: 'Escribir "$1" en $2'
   clearField: "Borrar $1"
+  textField: "campo de texto"
   copyFrom: "Copiar de $1"
   pasteInto: "Pegar en $1"
   cutFrom: "Cortar de $1"
