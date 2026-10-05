@@ -8,6 +8,10 @@ You click "Record," perform a workflow in your browser, and Mimik automatically 
 
 **Core loop: Record → Edit → Replay or Export.**
 
+## Commits
+
+Commits are authored by the human contributor. Never set an AI as the commit author, and never add `Co-Authored-By`, `Assisted-by`, `Generated-by` or session-link trailers for an AI tool. AI use is disclosed in the pull request description, on the template's "AI model(s) used" line, and nowhere else.
+
 ## Architecture
 
 **Everything runs in the Chrome extension. No backend.**
