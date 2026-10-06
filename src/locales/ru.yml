@@ -46,6 +46,9 @@ library:
   openInFullView: Открыть на весь экран
   openDashboard: "Открыть дашборд"
   openDashboardHint: "Там можно просматривать, импортировать и экспортировать гайды"
+  duplicate: Дублировать
+  copyOfTitle: "Копия: $1"
+  duplicateFailed: Не удалось дублировать гайд
 
 guideme:
   live: Live
@@ -71,7 +74,7 @@ guidemeCompletion:
 
 recording:
   capturePaused: Запись приостановлена
-  capturePausedBlur: "Smart Blur · запись приостановлена"
+  capturePausedBlur: "Умное размытие · запись приостановлена"
   pauseCapture: Приостановить запись
   resumeCapture: Продолжить запись
   recording: "Запись · $1 шаг"
@@ -79,7 +82,7 @@ recording:
   readyTitle: Готовы к записи!
   readySub: Кликните по странице, чтобы начать
   finishRecording: Завершить запись
-  smartBlur: Smart Blur
+  smartBlur: Умное размытие
   discard: Отклонить
   deleteStep: Удалить шаг
   justNow: Только что
@@ -142,12 +145,21 @@ settings:
   keyCannotSpend: "На этом ключе нет кредитов, поэтому будут работать только бесплатные модели."
   keyUnreachable: Не удалось подключиться к провайдеру. Проверьте соединение и попробуйте снова.
   modelsFound: "Доступно моделей: $1"
-  smartBlur: Smart Blur
+  smartBlur: Умное размытие
   privacyNotice: "Ваши ключи и аудио отправляются только выбранному вами провайдеру. Больше ничего не покидает ваш браузер."
   bugReport: "Нашли баг? Сообщите на GitHub"
   starCtaTitle: "Нравится то, что вы видите?"
   starCtaMessage: Звезда на GitHub помогает другим находить Mimik и поддерживает нас!
   starOnGithub: Поставить звезду на GitHub
+  clearKey: Удалить ключ
+  voiceover: "Закадровый голос для видео"
+  textToSpeech: "текст → речь"
+  voiceoverHint: "Mimik зачитывает текст каждого шага поверх экспортированного видео."
+  voiceoverUsingAiKey: "Используется ключ OpenAI из раздела «AI-описания»."
+  voiceoverNoKey: "Добавьте API-ключ, чтобы озвучивать видео."
+  voice: "Голос"
+  speechToText: "речь → текст"
+  voiceNarrationHint: "Проговаривайте свои действия, и Mimik напишет каждый шаг по вашим словам."
 
 blurPresets:
   email: Электронная почта
@@ -234,6 +246,7 @@ editor:
   rewriteErrorNoApiKey: Добавьте AI API-ключ в настройках, чтобы переписывать текст.
   rewriteErrorFailed: Не удалось переписать выделенный текст. Попробуйте ещё раз.
   rewriteErrorStale: Текст изменился. Выделите его снова.
+  restoreSpoken: Вернуть сказанное
 
 capture:
   recordSteps: Записать шаги
@@ -297,7 +310,7 @@ emptyGuide:
   subtitle: Запишите несколько шагов, чтобы оживить его
 
 blurPanel:
-  title: Smart Blur
+  title: Умное размытие
   manualMode: Ручной режим
   selectElements: Выберите элементы для размытия
   done: Готово
@@ -415,12 +428,33 @@ exportPreview:
   bundleRedactionNote: "Заштрихованные области удаляются из изображений до того, как они покинут ваш браузер."
   bundleTypedWarning: "На $1 скриншоте всё ещё виден введённый вами текст. Заштрихуйте его перед отправкой, если это важно."
   bundleTypedWarningPlural: "На $1 скриншотах всё ещё виден введённый вами текст. Заштрихуйте их перед отправкой, если это важно."
+  voiceover: "Закадровый голос"
+  voiceoverHint: "Каждый шаг зачитывается вслух. Шаг остаётся на экране, пока голос не закончит."
+  audio: "Звук"
+  audioSilent: "Без звука"
+  audioNarrated: "С озвучкой"
+  voiceoverNoKey: "Добавьте ключ OpenAI или ElevenLabs в настройках, чтобы озвучивать видео."
+  videoLength: "Длина видео $1"
+  videoLengthVoice: "Длина видео $1 → $2 с закадровым голосом"
+  voiceoverCost: "Фрагментов: $1 · около $2 символов для синтеза"
+  voiceoverFailed: "Не удалось озвучить видео. Проверьте API-ключ в настройках."
+  voiceoverNoAudioCodec: "Видео без звука. Этот браузер не умеет добавлять звук в видео."
+  voiceoverNoKeySkip: "Видео без звука. Добавьте API-ключ для закадрового голоса в настройках."
+  voiceoverNothingToSay: "Видео без звука. В этом гайде нет текста, который можно зачитать."
+  narrating: "Озвучивание шага $1 из $2"
 
 videoPlayer:
   stepCount: "$1 шагов"
   previousStep: "Предыдущий шаг"
   nextStep: "Следующий шаг"
   speed: "Скорость воспроизведения"
+  mute: "Выключить звук"
+  unmute: "Включить звук"
+  spoken: "Озвученный шаг"
+  play: "Воспроизвести"
+  pause: "Пауза"
+  fullscreen: "Во весь экран"
+  exitFullscreen: "Выйти из полноэкранного режима"
 
 exportMenu:
   docx: DOCX
@@ -452,7 +486,7 @@ onboarding:
   voiceDemoAct: Затем кликаете
   voiceDemoAction: Клик по вкладке «Биллинг»
   voiceDemoBadge: Из вашего голоса
-  blurTitle: Smart Blur
+  blurTitle: Умное размытие
   blurMessage: Автоматически размывайте конфиденциальную информацию на скриншотах. Выберите, какие паттерны распознавать.
   screenshotPreview: Предпросмотр скриншота
   notEnabled: Не включено
@@ -477,7 +511,7 @@ onboarding:
   featureVoice: Озвучка
   featureAnnotate: "Аннотации и штриховка"
   featureExports: "Экспорт куда угодно"
-  featureSmartBlur: Smart Blur
+  featureSmartBlur: Умное размытие
   openMimik: Открыть Mimik
 
 steps:
@@ -496,6 +530,9 @@ steps:
   drag: "Перетащите $1"
   navigate: Перейти на страницу
   defaultAction: "$1: $2"
+  typeValueInto: 'Введите "$1" в $2'
+  clearField: "Очистите $1"
+  textField: "текстовое поле"
 
 export:
   guideLabel: "ГАЙД"
@@ -593,3 +630,20 @@ import:
   errorVersion: "Этот файл создан в более новой версии Mimik. Обновите Mimik и попробуйте снова."
   errorEmpty: "В этом файле нет шагов."
   errorFailed: "Не удалось сохранить гайд в вашу библиотеку. Попробуйте импортировать его снова."
+
+transcript:
+  title: Расшифровка
+  empty: В этой записи ничего не было сказано.
+  loadError: Не удалось загрузить расшифровку. Попробуйте ещё раз.
+  filterAll: "Все ($1)"
+  filterUnused: "Неиспользованные ($1)"
+  privacyNote: "Хранится только на этом устройстве. Никогда не попадает в экспортированные гайды и удаляется вместе с гайдом."
+  usedInStep: "Шаг $1"
+  readOnlyHint: Включите «Редактировать» на верхней панели, чтобы добавить эти строки к шагу.
+  notUsed: Не использовано
+  filteredOut: Скрыто фильтром
+  addToStep: "Добавить к шагу $1"
+  copyAll: Копировать всё
+  download: Скачать
+  delete: Удалить расшифровку
+  confirmDelete: "Удалить эту расшифровку? Это действие нельзя отменить."
