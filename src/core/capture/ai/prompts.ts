@@ -77,7 +77,6 @@ const LANGUAGE_NAMES: Record<string, string> = {
   fr: 'French',
   pt: 'Brazilian Portuguese',
   de: 'German',
-  ru: 'Russian',
   ja: 'Japanese',
   ko: 'Korean',
   zh: 'Chinese',
@@ -89,6 +88,7 @@ const LANGUAGE_INSTRUCTIONS: Record<Exclude<AILanguageCode, 'en'>, string> = {
   'pt-BR': '\nIMPORTANTE: escreva o resultado em português do Brasil. Não traduza nomes de botões, campos ou páginas.',
   de: '\nWICHTIG: Schreibe die Ausgabe auf Deutsch. Übersetze keine Schaltflächen-, Feld- oder Seitennamen.',
   'zh-CN': '\n重要：请用中文输出。不要翻译按钮、字段和页面的名称。',
+  ru: '\nВАЖНО: пиши результат на русском языке. Не переводи названия кнопок, полей и страниц.',
 };
 
 export function getLanguageSuffix(locale: string): string {

@@ -42,7 +42,7 @@ describe('getLanguageSuffix', () => {
   });
 
   it('writes the Russian instruction in Russian', () => {
-    expect(getLanguageSuffix('ru')).toContain('Russian');
+    expect(getLanguageSuffix('ru')).toContain('на русском языке');
   });
 
   it('matches a regional locale to its base language', () => {
